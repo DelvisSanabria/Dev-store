@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevsStore</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="zoom.css">
+</head>
+<body class="font-sans">
+  <header id="top" class="grid grid-row-3 bg-[#eadcd3]">
+    <nav class="grid grid-cols-2 md:grid-cols-3 justify-between items-center p-2.5">
+      <div name="logo and menu" class="flex justify-start items-center text-2xl font-bold tracking-wider cursor-pointer md:justify-between">
+        <svg class="md:hidden" xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 0 50 50" width="28" id="hamburger-menu"><path fill="#231F20" d="M8.667 15h30a1 1 0 100-2h-30a1 1 0 100 2zM8.667 37h30a1 1 0 100-2h-30a1 1 0 100 2zM8.667 26h30a1 1 0 100-2h-30a1 1 0 100 2z"></path></svg>
+        <h1 class="cursor-pointer tracking-in-contract">Devs<i>Store</i></h1>
+        <div class="hidden md:flex px-2 text-xs text-center font-light">
+          <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="M480-298q103.95-83.86 156.975-161.43Q690-537 690-604q0-59-21.5-100t-53.009-66.88q-31.51-25.881-68.271-37.5Q510.459-820 480-820q-30.459 0-67.22 11.62-36.761 11.619-68.271 37.5Q313-745 291.5-704T270-604q0 67 53.025 144.57T480-298Zm0 76Q343-325 276.5-419.199q-66.5-94.2-66.5-184.554Q210-672 234.5-723.5T298-810q39-35 86.98-52.5 47.98-17.5 95-17.5T575-862.5q48 17.5 87 52.5t63.5 86.533Q750-671.934 750-603.544 750-513 683.5-419 617-325 480-222Zm.089-318Q509-540 529.5-560.589q20.5-20.588 20.5-49.5Q550-639 529.411-659.5q-20.588-20.5-49.5-20.5Q451-680 430.5-659.411q-20.5 20.588-20.5 49.5Q410-581 430.589-560.5q20.588 20.5 49.5 20.5ZM210-80v-60h540v60H210Zm270-524Z"/></svg>
+          <span>Delivery <br> To</span>
+        </div>
+      </div>
+      <div name="searchbar large" class="hidden md:flex md:px-2 md:py-1 md:justify-center md:w-[40vw]">
+        <div class="flex items-center bg-[#a5a58f] px-2 border-r-2 border-[#f0efeb] rounded-lg rounded-r-none hover:ring hover:ring-[#c49b82]">
+          <span class="text-semibold">All</span>
+          <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 -960 960 960" width="14"><path d="M480-360 280-559h400L480-360Z"/></svg>
+        </div>
+        <input class="w-[40vw] h-8 outline-none text-sm p-4" type="text" name="searchbar" id="top" placeholder="Search in Store">
+        <button class="flex bg-[#b7b7a6] p-1 rounded-lg rounded-l-none justify-center items-center cursor-pointer">
+          <svg id="SvgjsSvg1012" width="18" height="18" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"><defs id="SvgjsDefs1013"></defs><g id="SvgjsG1014"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" clip-rule="evenodd" viewBox="0 0 128 128" width="18" height="18"><path fill="none" d="M.211 0h128v128h-128z"></path><path fill-rule="nonzero" d="M75.941 79.528c-11.617 10.144-28.988 13.34-43.601 7.365C14.72 79.689 3.496 59.425 6.867 40.571 10.24 21.704 27.782 6.443 47.398 6.008c.361-.006.722-.008 1.084-.007 19.279.183 37.454 15.06 41.025 34.312 2.394 12.904-1.734 26.845-10.689 36.433l34.787 33.82c.746.788.617 1.05.605 1.489-.042 1.525-2.11 2.527-3.394 1.379L75.941 79.528ZM47.965 10.001c-17.208.163-33.355 13.173-36.934 30.111-2.634 12.469 1.515 26.166 10.639 35.073 10.478 10.228 27.063 13.662 40.897 8.005 16.003-6.542 26.182-25.034 23.007-42.148-3.147-16.967-18.86-30.64-36.627-31.035a53.632 53.632 0 0 0-.982-.006Z" fill="#272727" class="color000 svgShape"></path></svg></g></svg>
+        </button>
+    </div>
+      <div name="icons" class="flex justify-end px-2 slide-in-elliptic-right-fwd">
+        <div class="flex px-2 items-center text-sm font-light tracking-normal hover:rounded-md hover:ring hover:ring-[#c49b82]">
+          <button class="pr-0"><a href="#">Sign in</a></button>
+          <svg class="px-2 pl-0 cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="34" viewBox="0 -960 960 960" width="34"><path d="m375-240-43-43 198-198-198-198 43-43 241 241-241 241Z"/></svg>
+        </div>
+        <svg class="px-2 cursor-pointer hover:rounded-md hover:ring hover:ring-[#c49b82]" xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="M222-255q63-44 125-67.5T480-346q71 0 133.5 23.5T739-255q44-54 62.5-109T820-480q0-145-97.5-242.5T480-820q-145 0-242.5 97.5T140-480q0 61 19 116t63 109Zm257.814-195Q422-450 382.5-489.686q-39.5-39.686-39.5-97.5t39.686-97.314q39.686-39.5 97.5-39.5t97.314 39.686q39.5 39.686 39.5 97.5T577.314-489.5q-39.686 39.5-97.5 39.5Zm.654 370Q398-80 325-111.5q-73-31.5-127.5-86t-86-127.266Q80-397.532 80-480.266T111.5-635.5q31.5-72.5 86-127t127.266-86q72.766-31.5 155.5-31.5T635.5-848.5q72.5 31.5 127 86t86 127.032q31.5 72.532 31.5 155T848.5-325q-31.5 73-86 127.5t-127.032 86q-72.532 31.5-155 31.5ZM480-140q55 0 107.5-16T691-212q-51-36-104-55t-107-19q-54 0-107 19t-104 55q51 40 103.5 56T480-140Zm0-370q34 0 55.5-21.5T557-587q0-34-21.5-55.5T480-664q-34 0-55.5 21.5T403-587q0 34 21.5 55.5T480-510Zm0-77Zm0 374Z"/></svg>
+        <button class="hidden xl:flex items-center px-1 text-sm font-light tracking-normal hover:rounded-md hover:ring hover:ring-[#c49b82]"><a href="#">Returns & Orders</a></button>
+        <svg class="px-2 cursor-pointer hover:rounded-md hover:ring hover:ring-[#c49b82]" xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="M286.788-81Q257-81 236-102.212q-21-21.213-21-51Q215-183 236.212-204q21.213-21 51-21Q317-225 338-203.788q21 21.213 21 51Q359-123 337.788-102q-21.213 21-51 21Zm400 0Q657-81 636-102.212q-21-21.213-21-51Q615-183 636.212-204q21.213-21 51-21Q717-225 738-203.788q21 21.213 21 51Q759-123 737.788-102q-21.213 21-51 21ZM235-741l110 228h288l125-228H235Zm-30-60h589.074q22.964 0 34.945 21Q841-759 829-738L694-495q-11 19-28.559 30.5Q647.881-453 627-453H324l-56 104h491v60H277q-42 0-60.5-28t.5-63l64-118-152-322H51v-60h117l37 79Zm140 288h288-288Z"/></svg>
+      </div>
+    </nav>
+    <div name="searchbar mobile" class="flex px-2 py-1 justify-center md:hidden">
+        <input class="w-[90%] h-8 outline-none rounded-lg rounded-r-none text-sm p-4" type="text" name="searchbar" id="top" placeholder="Search in Store">
+      <button class="flex bg-[#b7b7a6] p-1 rounded-lg rounded-l-none justify-center items-center cursor-pointer">
+        <svg id="SvgjsSvg1012" width="18" height="18" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"><defs id="SvgjsDefs1013"></defs><g id="SvgjsG1014"><svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" clip-rule="evenodd" viewBox="0 0 128 128" width="18" height="18"><path fill="none" d="M.211 0h128v128h-128z"></path><path fill-rule="nonzero" d="M75.941 79.528c-11.617 10.144-28.988 13.34-43.601 7.365C14.72 79.689 3.496 59.425 6.867 40.571 10.24 21.704 27.782 6.443 47.398 6.008c.361-.006.722-.008 1.084-.007 19.279.183 37.454 15.06 41.025 34.312 2.394 12.904-1.734 26.845-10.689 36.433l34.787 33.82c.746.788.617 1.05.605 1.489-.042 1.525-2.11 2.527-3.394 1.379L75.941 79.528ZM47.965 10.001c-17.208.163-33.355 13.173-36.934 30.111-2.634 12.469 1.515 26.166 10.639 35.073 10.478 10.228 27.063 13.662 40.897 8.005 16.003-6.542 26.182-25.034 23.007-42.148-3.147-16.967-18.86-30.64-36.627-31.035a53.632 53.632 0 0 0-.982-.006Z" fill="#272727" class="color000 svgShape"></path></svg></g></svg>
+      </button>
+    </div>
+    <div name="suggerents bar mobile" class="flex justify-center items-center p-2 overflow-x-auto tracking-in-contract">
+      <div class="hidden md:flex mx-2 p-2 bg-[#fdf1e7] rounded-lg cursor-pointer hover:ring hover:ring-[#c49b82]">
+        <svg class="px-1 pr-0" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 50 50" width="24" id="hamburger-menu"><path fill="#231F20" d="M8.667 15h30a1 1 0 100-2h-30a1 1 0 100 2zM8.667 37h30a1 1 0 100-2h-30a1 1 0 100 2zM8.667 26h30a1 1 0 100-2h-30a1 1 0 100 2z"></path></svg>
+        <span class="px-1 pl-0 font-semibold">All</span>
+      </div>
+      <ul class="hidden md:inline-flex items-center gap-2 p-1 whitespace-nowrap  overflow-x-auto">
+        <li class="p-2 bg-[#fdf1e7] rounded-lg cursor-pointer hover:ring hover:ring-[#c49b82]">Today´s Selects</li>
+        <li class="p-2 bg-[#fdf1e7] rounded-lg cursor-pointer hover:ring hover:ring-[#c49b82]">Best Sellers</li>
+        <li class="p-2 bg-[#fdf1e7] rounded-lg cursor-pointer hover:ring hover:ring-[#c49b82]">Registry</li>
+        <li class="p-2 bg-[#fdf1e7] rounded-lg cursor-pointer hover:ring hover:ring-[#c49b82]">Sell</li>
+        <li class="p-2 bg-[#fdf1e7] rounded-lg cursor-pointer hover:ring hover:ring-[#c49b82]">Orders</li>
+      </ul>
+      <ul class="inline-flex p-2 items-center gap-2 whitespace-nowrap  overflow-x-auto md:hidden">
+        <li class="p-1 bg-[#fdf1e7] rounded-lg cursor-pointer hover:ring hover:ring-[#c49b82]">Deals</li>
+        <li class="p-1 bg-[#fdf1e7] rounded-lg cursor-pointer hover:ring hover:ring-[#c49b82]">Best Sellers</li>
+        <li class="p-1 bg-[#fdf1e7] rounded-lg cursor-pointer hover:ring hover:ring-[#c49b82]">LiveStreams</li>
+        <li class="p-1 bg-[#fdf1e7] rounded-lg cursor-pointer hover:ring hover:ring-[#c49b82]">Music</li>
+        <li class="p-1 bg-[#fdf1e7] rounded-lg cursor-pointer hover:ring hover:ring-[#c49b82]">Video</li>
+        <li class="p-1 bg-[#fdf1e7] rounded-lg cursor-pointer hover:ring hover:ring-[#c49b82]">Books</li>
+        <li class="p-1 bg-[#fdf1e7] rounded-lg cursor-pointer hover:ring hover:ring-[#c49b82]">New Releases</li>
+        <li class="p-1 bg-[#fdf1e7] rounded-lg cursor-pointer hover:ring hover:ring-[#c49b82]">Home</li>
+        <li class="p-1 bg-[#fdf1e7] rounded-lg cursor-pointer hover:ring hover:ring-[#c49b82]">Pc</li>
+      </ul>
+    </div>
+  </header>
+  <section name="recomended sections" class="bg-[#a5a58f] mb-2 md:bg-[#fdf1e7]">
+    <!--desktop version start here-->
+    <img class="hidden md:flex cursor-pointer" src="./rsc/images/suggerents__section__bg__lg.jpg" alt="">
+    <div name="principal grid" class="hidden md:grid grid-cols-3 gap-2 p-4 lg:grid lg:grid-cols-4">
+      <div name="gaming merchandise" class="bg-[#f0efeb] p-1 border-2 border-[#c49b82] rounded-md slide-in-elliptic-right-fwd">
+        <div name="section tittle"  class="text-xl font-bold px-4 py-2 tracking-wide cursor-pointer">
+          <h2>Gaming accesories</h2>
+        </div>
+        <div class="grid grid-cols-2 gap-2 p-2 justify-items-center items-center text-center">
+          <div class="p-2 border-2 border-[#f0efeb] rounded-md shadow-sm shadow-black hover:ring hover:ring-[#c49b82] font-light tracking-normal cursor-pointer">
+            <img src="./rsc/images/merchandise__img__one.png" alt="merchandise__1">
+            <label for="img">Apparel</label>
+          </div>
+          <div class="p-2 border-2 border-[#f0efeb] rounded-md shadow-sm shadow-black hover:ring hover:ring-[#c49b82] font-light tracking-normal cursor-pointer">
+            <img src="./rsc/images/merchandise__img__two.png" alt="merchandise__2">
+            <label for="img">Hats</label>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-2 p-2 justify-items-center items-center text-center">
+          <div class="p-2 border-2 border-[#f0efeb] rounded-md shadow-sm shadow-black hover:ring hover:ring-[#c49b82] text-sm font-light tracking-normal cursor-pointer">
+            <img src="./rsc/images/merchandise__img__three.png" alt="merchandise__3">
+            <label for="img">Action figures</label>
+          </div>
+          <div class="p-2 border-2 border-[#f0efeb] rounded-md shadow-sm shadow-black hover:ring hover:ring-[#c49b82] font-light tracking-normal cursor-pointer">
+            <img src="./rsc/images/merchandise__img__four.png" alt="merchandise__4">
+            <label for="img">Mugs</label>
+          </div>
+        </div>
+        <span class="px-4 font-light text-lg tracking-wider text-[#c49b82] cursor-pointer hover:text-[#95735f]">See more</span>
+      </div>
+      <div name="Deals in Fashion shoes" class="bg-[#f0efeb] p-1 border-2 border-[#c49b82] rounded-md slide-in-elliptic-right-fwd">
+        <div name="section tittle"  class="text-xl font-bold px-4 py-2 tracking-wide cursor-pointer">
+          <h2>Shoes Deals</h2>
+        </div>
+        <div class="grid grid-cols-2 gap-2 p-2 justify-items-center items-center text-center">
+          <div class="p-2 border-2 border-[#f0efeb] rounded-md shadow-sm shadow-black hover:ring hover:ring-[#c49b82] font-light tracking-normal cursor-pointer">
+            <img src="./rsc/images/shop__women.jpg" alt="deal__one">
+            <label for="img">Shop womens</label>
+          </div>
+          <div class="p-2 border-2 border-[#f0efeb] rounded-md shadow-sm shadow-black hover:ring hover:ring-[#c49b82] font-light tracking-normal cursor-pointer">
+            <img src="./rsc/images/Shop__mens.jpg" alt="deal__two">
+            <label for="img">Shop mens</label>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-2 p-2 justify-items-center items-center text-center">
+          <div class="p-2 border-2 border-[#f0efeb] rounded-md shadow-sm shadow-black hover:ring hover:ring-[#c49b82] font-light tracking-normal cursor-pointer">
+            <img src="./rsc/images/shop__kids.jpg" alt="deal__three">
+            <label for="img">Shop kids</label>
+          </div>
+          <div class="p-2 border-2 border-[#f0efeb] rounded-md shadow-sm shadow-black hover:ring hover:ring-[#c49b82] font-light tracking-normal cursor-pointer">
+            <img src="./rsc/images/shop__more__options.jpg" alt="deal__four">
+            <label for="img">See more Shoes</label>
+          </div>
+        </div>
+        <span class="px-4 font-light text-lg tracking-wider text-[#c49b82] cursor-pointer hover:text-[#95735f]">See deals</span>
+      </div>
+      <div name="Language preferences" class="bg-[#f0efeb] p-1 border-2 border-[#c49b82] rounded-md slide-in-elliptic-left-fwd">
+        <div name="section tittle"  class="text-xl font-bold px-4 py-2 tracking-wide cursor-pointer">
+          <h2>Change the Language</h2>
+        </div>
+        <div class="flex gap-2 p-2 justify-items-center items-center text-center border-2 border-[#f0efeb] rounded-md shadow-sm shadow-black hover:ring hover:ring-[#c49b82] font-light tracking-normal cursor-pointer">
+            <img class="h-60 lg:h-[22rem]" src="./rsc/images/leng__preferences.jpg" alt="Language">
+        </div>
+        <span class="px-4 font-light text-lg tracking-wider text-[#c49b82] cursor-pointer hover:text-[#95735f]">Let´s change</span>
+      </div>
+      <div name="Health & Personal Care" class="bg-[#f0efeb] p-1 border-2 border-[#c49b82] rounded-md slide-in-elliptic-left-fwd">
+        <div name="section tittle"  class="text-xl font-bold px-4 py-2 tracking-wide cursor-pointer">
+          <h2>Health & Personal Care</h2>
+        </div>
+        <div class="flex gap-2 p-2 justify-items-center items-center text-center border-2 border-[#f0efeb] rounded-md shadow-sm shadow-black hover:ring hover:ring-[#c49b82] font-light tracking-normal cursor-pointer">
+            <img class="h-60 lg:h-[22rem]" src="./rsc/images/health__personal.jpg" alt="Health & Personal Care">
+        </div>
+        <span class="px-4 font-light text-lg tracking-wider text-[#c49b82] cursor-pointer hover:text-[#95735f]">Shop now</span>
+      </div>
+      <div name="Discover Trends" class="bg-[#f0efeb] p-1 border-2 border-[#c49b82] rounded-md slide-in-elliptic-right-fwd">
+        <div name="section tittle"  class="text-xl font-bold px-4 py-2 tracking-wide cursor-pointer">
+          <h2>Discover Trends</h2>
+        </div>
+        <div class="flex gap-2 p-2 justify-items-center items-center text-center border-2 border-[#f0efeb] rounded-md shadow-sm shadow-black hover:ring hover:ring-[#c49b82] font-light tracking-normal cursor-pointer">
+            <img class="h-60 lg:h-[22rem]" src="./rsc/images/fashion__trends.jpg" alt="trends">
+        </div>
+        <span class="px-4 font-light text-lg tracking-wider text-[#c49b82] cursor-pointer hover:text-[#95735f]">See more</span>
+      </div>
+      <div name="For your Fitness Needs" class="bg-[#f0efeb] p-1 border-2 border-[#c49b82] rounded-md slide-in-elliptic-right-fwd">
+        <div name="section tittle"  class="text-xl font-bold px-4 py-2 tracking-wide cursor-pointer">
+          <h2>For your Fitness Needs</h2>
+        </div>
+        <div class="flex gap-2 p-2 justify-items-center items-center text-center border-2 border-[#f0efeb] rounded-md shadow-sm shadow-black hover:ring hover:ring-[#c49b82] font-light tracking-normal cursor-pointer">
+            <img class="h-60 lg:h-[22rem]" src="./rsc/images/Fitness__needs.jpg" alt="fitness">
+        </div>
+        <span class="px-4 font-light text-lg tracking-wider text-[#c49b82] cursor-pointer hover:text-[#95735f]">Shop now</span>
+      </div>
+      <div name="Home refresh ideas" class="bg-[#f0efeb] p-1 border-2 border-[#c49b82] rounded-md slide-in-elliptic-left-fwd">
+        <div name="section tittle"  class="text-xl font-bold px-4 py-2 tracking-wide cursor-pointer">
+          <h2>Home refresh ideas</h2>
+        </div>
+        <div class="flex gap-2 p-2 justify-items-center items-center text-center border-2 border-[#f0efeb] rounded-md shadow-sm shadow-black hover:ring hover:ring-[#c49b82] font-light tracking-normal cursor-pointer">
+            <img class="h-60 lg:h-[22rem]" src="./rsc/images/home__ideas.jpg" alt="home">
+        </div>
+        <span class="px-4 font-light text-lg tracking-wider text-[#c49b82] cursor-pointer hover:text-[#95735f]">Shop Kitchen upgrades</span>
+      </div>
+      <div name="Pets Articles" class="bg-[#f0efeb] p-1 border-2 border-[#c49b82] rounded-md slide-in-elliptic-left-fwd">
+        <div name="section tittle"  class="text-xl font-bold px-4 py-2 tracking-wide cursor-pointer">
+          <h2>Pets Articles</h2>
+        </div>
+        <div class="flex gap-2 p-2 justify-items-center items-center text-center border-2 border-[#f0efeb] rounded-md shadow-sm shadow-black hover:ring hover:ring-[#c49b82] font-light tracking-normal cursor-pointer">
+            <img class="h-60 lg:h-[22rem]" src="./rsc/images/pets__articles.jpg" alt="pets">
+        </div>
+        <span class="px-4 font-light text-lg tracking-wider text-[#c49b82] cursor-pointer hover:text-[#95735f]">See more</span>
+      </div>
+      <div name="Home and Kitchen" class="bg-[#f0efeb] p-1 border-2 border-[#c49b82] rounded-md slide-in-elliptic-left-fwd lg:hidden">
+        <div name="section tittle"  class="text-xl font-bold px-4 py-2 tracking-wide cursor-pointer">
+          <h2>Home and Kitchen</h2>
+        </div>
+        <div class="flex gap-2 p-2 justify-items-center items-center text-center border-2 border-[#f0efeb] rounded-md shadow-sm shadow-black hover:ring hover:ring-[#c49b82] font-light tracking-normal cursor-pointer">
+            <img class="h-60" src="./rsc/images/home__kitchen.jpg" alt="kitche">
+        </div>
+        <span class="px-4 font-light text-lg tracking-wider text-[#c49b82] cursor-pointer hover:text-[#95735f]">See more</span>
+      </div>
+    </div>
+    <!--mobile version start here-->
+    <img class="h-[40vh] w-[100%] cursor-pointer slide-in-elliptic-left-fwd md:hidden" src="./rsc/images/sugerents__section__bg.jpg" alt="background of section">
+    <div name="fila de tarjetas de sugerencias" class="flex gap-2 p-2 overflow-x-auto slide-in-elliptic-right-fwd md:hidden">
+      <div name="card__box" class="flex justify-center items-center border-2 border-[#f0efeb] rounded-md shadow-sm shadow-[#f0efeb]">
+        <div name="box" class="w-[120px]">
+          <div name="content">
+            <a href="#">
+              <img class="w-[180px] h-[130px]" src="./rsc/images/shop__storage__img.jpg" alt="product img">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div name="card__box" class="flex justify-center items-center border-2 border-[#f0efeb] rounded-md shadow-sm shadow-[#f0efeb]">
+        <div name="box" class="w-[120px]">
+          <div name="content">
+            <a href="#">
+              <img class="w-[180px] h-[130px]" src="./rsc/images/shop__deals__card__img.jpeg" alt="product img">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div name="card__box" class="flex justify-center items-center border-2 border-[#f0efeb] rounded-md shadow-sm shadow-[#f0efeb]">
+        <div name="box" class="w-[120px]">
+          <div name="content">
+            <a href="#">
+              <img class="w-[180px] h-[130px]" src="./rsc/images/beauty__picks__img.jpeg" alt="product img">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div name="card__box" class="flex justify-center items-center border-2 border-[#f0efeb] rounded-md shadow-sm shadow-[#f0efeb]">
+        <div name="box" class="w-[120px]">
+          <div name="content">
+            <a href="#">
+              <img class="w-[180px] h-[130px]" src="./rsc/images/shop__womens__fashion__img.jpg" alt="product img">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div name="card__box" class="flex justify-center items-center border-2 border-[#f0efeb] rounded-md shadow-sm shadow-[#f0efeb]">
+        <div name="box" class="w-[120px]">
+          <div name="content">
+            <a href="#">
+              <img class="w-[180px] h-[130px]" src="./rsc/images/shop Laptops__img.jpeg" alt="product img">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section name="sign in section" class="flex flex-col text-xl font-bold p-2 tracking-wide bg-[#fdf1e7] mb-2 slide-in-elliptic-bottom-fwd md:hidden">
+    <h2>Sign in if you want the best experience</h2>
+    <div class="flex justify-center items-center py-4">
+      <button class="w-11/12 bg-[#c49b82] rounded-lg text-sm font-light px-10 py-4"><a href="#">Sign In</a></button>
+    </div>
+    <span class="text-sm tracking-wider text-[#c49b82] hover:text-[#b59e8c]" ><a href="#">Create an account</a></span>
+  </section>
+  <section name="sugerent category" class="mb-2 slide-in-elliptic-top-fwd md:hidden">
+    <a href="">
+      <img src="./rsc/images/sugerent__one.jpg" alt="suggerents__1">
+    </a>
+  </section>
+  <section name="trends section" class="text-xl font-bold p-2 tracking-wide bg-[#fdf1e7] mb-1 slide-in-elliptic-bottom-fwd md:hidden">
+    <div class="p-4">
+      <h2><a href="#">Powerfull trends in Computer Components</a></h2>
+    </div>
+    <div name="categorys" class="font-light tracking-normal">
+      <div class="grid grid-cols-2 gap-2 p-4 justify-items-center items-end">
+        <div class="p-2 border-2 border-[#f0efeb] rounded-md shadow-sm shadow-black hover:ring hover:ring-[#c49b82] cursor-pointer">
+          <img class="w-36" src="./rsc/images/shop__img__one.png" alt="category__1">
+          <label for="img">Gaming Cases</label>
+        </div>
+        <div class="p-2 border-2 border-[#f0efeb] rounded-md shadow-sm shadow-black hover:ring hover:ring-[#c49b82] cursor-pointer">
+          <img class="w-40 flex content-end" src="./rsc/images/shop__img__two.png" alt="category__2">
+          <label for="img">Keyboards</label>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-2 p-4 justify-items-center items-end">
+        <div class="p-2 border-2 border-[#f0efeb] rounded-md shadow-sm shadow-black hover:ring hover:ring-[#c49b82] cursor-pointer">
+          <img class="w-36" src="./rsc/images/shop__img__three.png" alt="category__3">
+          <label for="img">Graphics Cards</label>
+        </div>
+        <div class="p-2 border-2 border-[#f0efeb] rounded-md shadow-sm shadow-black hover:ring hover:ring-[#c49b82] cursor-pointer">
+          <img class="w-44" src="./rsc/images/shop__img__four.png" alt="category__4">
+          <label for="img">S.O Licenses</label>
+        </div>
+      </div>
+      <span class="px-4 text-md tracking-wider text-[#c49b82] cursor-pointer hover:text-[#95735f]">see more</span>
+    </div>
+  </section>
+  <section name="top sellers and most popular in a random category" class="mb-2 md:hidden">
+    <div name="top sellers" class="bg-[#c49b82] mb-1 slide-in-elliptic-top-fwd">
+      <div name="section title" class="text-xl font-bold p-2 tracking-wide">
+        <h2 class="cursor-pointer p-2">Top Sellers in Pc</h2>
+        <div name="topic 1" class="flex flex-cols gap-2 my-4 p-2 border-2 border-[#f0efeb] rounded-md cursor-pointer">
+          <div name="img" class="h-[160px]">
+            <img class="w-[500px] h-[160px] rounded-lg" src="./rsc/images/sellers__img__one.jpg" alt="product">
+          </div>
+          <div name="product info" class="px-2 font-normal">
+            <div name="header">
+              <span>Logitech G502 HERo - High Performance Wired Gaming Mouse, HERO 25k Sensor...</span>
+            </div>
+            <div name="price" class="flex items-start py-2">
+              <span class="text-xs">$</span>
+              <span>44</span>
+              <span class="text-xs px-1">99</span>
+            </div>
+          </div>
+        </div>
+        <div name="topic 2" class="flex flex-cols gap-2 my-2 p-2 border-2 border-[#f0efeb] rounded-md cursor-pointer">
+          <div name="img" class="h-[160px]">
+            <img class="w-[260px] h-[160px] rounded-lg" src="./rsc/images/sellers__img__two.jpg" alt="product">
+          </div>
+          <div name="product info" class="px-2 font-normal">
+            <div name="header">
+              <span>SteelSeries Apex 3 RGB - Gaming keyboard</span>
+            </div>
+            <div name="price" class="flex items-start py-2">
+              <span class="text-xs">$</span>
+              <span>22</span>
+              <span class="text-xs px-1">98</span>
+            </div>
+        </div>
+        </div>
+        <div name="topic 3" class="flex flex-cols gap-2 my-2 p-2 border-2 border-[#f0efeb] rounded-md cursor-pointer">
+          <div name="img" class="h-[160px]">
+            <img class="w-[500px] h-[160px] rounded-lg" src="./rsc/images/sellers__img__three.jpg" alt="product">
+          </div>
+          <div name="product info" class="px-2 font-normal">
+            <div name="header">
+              <span>
+                Razer Kraken Gaming Headset: Lightweight Aluminum Frame - Retractable Noise...
+              </span>
+            </div>
+            <div name="price" class="flex items-start py-2">
+              <span class="text-xs">$</span>
+              <span>34</span>
+              <span class="text-xs px-1">36</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div name="most popular" class="bg-[#b7b7a6] slide-in-elliptic-bottom-fwd">
+      <div name="section title" class="text-xl font-bold p-2 tracking-wide">
+        <h2 class="p-2 cursor-pointer">Popular Products in Apparel</h2>
+          <div name="topic 1" class="flex flex-cols gap-2 my-2 p-2 border-2 border-[#f0efeb] rounded-md cursor-pointer">
+            <div name="img">
+              <img src="./rsc/images/mostP__product__one.png" alt="product">
+            </div>
+            <div name="product info" class="px-2 font-normal">
+              <div name="header">
+                <span>Dickies Men´s Short-Sleeve Coverall</span>
+              </div>
+              <div name="price" class="flex items-start py-2">
+                <span class="text-xs">$</span>
+                <span>44</span>
+                <span class="text-xs px-1">99</span>
+              </div>
+            </div>
+          </div>
+          <div name="topic 2" class="flex flex-cols gap-2 my-2 p-2 border-2 border-[#f0efeb] rounded-md cursor-pointer">
+            <div name="img" class="h-[160px] w-[65px]">
+              <img src="./rsc/images/mostP__product__two.png" alt="product">
+            </div>
+            <div name="product info" class="px-2 font-normal">
+              <div name="header">
+                <span>Capezio Girls Shorts Sleeve Leotard - Girls</span>
+              </div>
+              <div name="price" class="flex items-start py-2">
+                <span class="text-xs">$</span>
+                <span>19</span>
+                <span class="text-xs px-1">25</span>
+              </div>
+          </div>
+          </div>
+          <div name="topic 3" class="flex flex-cols gap-2 my-2 p-2 border-2 border-[#f0efeb] rounded-md cursor-pointer">
+            <div name="img"  class="h-[160px]">
+              <img src="./rsc/images/mostP__product__three.png" alt="product">
+            </div>
+            <div name="product info" class="px-2 font-normal">
+              <div name="header">
+                <span>Hanes Sport Men´s T-shirt Pack, Cool DRI Moisture-Wicking Performance...</span>
+              </div>
+              <div name="price" class="flex items-start py-2">
+                <span class="text-xs">$</span>
+                <span>20</span>
+                <span class="text-xs px-1">00</span>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  <section name="sugerent category" class="mb-2 slide-in-elliptic-top-fwd md:hidden">
+    <a href="#">
+      <img src="./rsc/images/sugerent__two.jpg" alt="suggerents__2">
+    </a>
+  </section>
+  <section name="topic merchandise" class="bg-[#f0efeb] p-2 mb-2 slide-in-elliptic-bottom-fwd md:hidden">
+    <div name="section tittle"  class="text-xl font-bold p-4 tracking-wide">
+      <h2>Gaming merchandise</h2>
+    </div>
+    <div class="grid grid-cols-2 gap-2 p-4 justify-items-center items-center text-center">
+      <div class="p-2 border-2 border-[#f0efeb] rounded-md shadow-sm shadow-black hover:ring hover:ring-[#c49b82] font-light tracking-normal cursor-pointer">
+        <img src="./rsc/images/merchandise__img__one.png" alt="merchandise__1">
+        <label for="img">Apparel</label>
+      </div>
+      <div class="p-2 border-2 border-[#f0efeb] rounded-md shadow-sm shadow-black hover:ring hover:ring-[#c49b82] font-light tracking-normal cursor-pointer">
+        <img src="./rsc/images/merchandise__img__two.png" alt="merchandise__2">
+        <label for="img">Hats</label>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 gap-2 p-4 justify-items-center items-center text-center">
+      <div class="p-2 border-2 border-[#f0efeb] rounded-md shadow-sm shadow-black hover:ring hover:ring-[#c49b82] font-light tracking-normal cursor-pointer">
+        <img src="./rsc/images/merchandise__img__three.png" alt="merchandise__3">
+        <label for="img">Action figures</label>
+      </div>
+      <div class="p-2 border-2 border-[#f0efeb] rounded-md shadow-sm shadow-black hover:ring hover:ring-[#c49b82] font-light tracking-normal cursor-pointer">
+        <img src="./rsc/images/merchandise__img__four.png" alt="merchandise__4">
+        <label for="img">Mugs</label>
+      </div>
+    </div>
+    <span class="px-4 py-4 font-light text-lg tracking-wider text-[#c49b82] cursor-pointer hover:text-[#95735f]">see more</span>
+  </section>
+  <section name="explore departments" class="bg-[#b7b7a6] p-2 slide-in-elliptic-top-fwd md:hidden">
+    <div name="section tittle" class="text-xl font-bold p-4 tracking-wide">
+      <h2>Explore Departments</h2>
+    </div>
+    <div class="grid grid-cols-2 gap-2 p-2 border-2 border-[#f0efeb] rounded-md text-center text-md font-light tracking-wide">
+        <div class="rounded-md hover:ring hover:ring-[#c49b82] cursor-pointer">
+          <img class="rounded-lg" src="./rsc/images/department__one.jpeg" alt="department__1">
+          <label for="img">Beauty</label>
+        </div>
+        <div class="rounded-md hover:ring hover:ring-[#c49b82] cursor-pointer">
+          <img class="rounded-lg" src="./rsc/images/department__two.jpeg" alt="department__2">
+          <label for="img">Home and Kitchen</label>
+        </div>
+        <div class="rounded-md hover:ring hover:ring-[#c49b82] cursor-pointer">
+          <img class="rounded-lg" src="./rsc/images/department__three.jpeg" alt="department__3">
+          <label for="img">Sport and Outdoors</label>
+        </div>
+        <div class="rounded-md hover:ring hover:ring-[#c49b82] cursor-pointer">
+          <img class="rounded-lg" src="./rsc/images/department__four.jpeg" alt="department__4">
+          <label for="img">Electronics</label>
+        </div>
+        <div class="rounded-md hover:ring hover:ring-[#c49b82] cursor-pointer">
+          <img class="rounded-lg" src="./rsc/images/department__five.jpeg" alt="department__5">
+          <label for="img">Outdoor Clothing</label>
+        </div>
+        <div class="rounded-md hover:ring hover:ring-[#c49b82] cursor-pointer">
+          <img class="rounded-lg" src="./rsc/images/department__six.jpeg" alt="department__6">
+          <label for="img">Pet Supplies</label>
+        </div>
+    </div>
+    <div class="my-2 mt-4">
+      <span class="p-2 font-light text-lg tracking-wider text-black cursor-pointer hover:text-[#fdf1e7]">Show all Departments</span>
+    </div>
+  </section>
+  <section name="sign in section lg" class="hidden md:flex flex-col text-xl font-bold p-2 tracking-wide bg-[#fdf1e7]">
+    <h2>Sign in if you want the best experience</h2>
+    <div class="flex justify-center items-center py-4">
+      <button class="w-6/12 bg-[#c49b82] rounded-lg text-sm font-light px-10 py-4"><a href="#">Sign In</a></button>
+    </div>
+    <span class="text-sm tracking-wider text-[#c49b82]" ><a href="#">Create an account</a></span>
+  </section>
+  <div class="flex flex-col justify-center pb-2 bg-[#fdf1e7] text-xs font-light hover:ring hover:ring-[#c49b82] cursor-pointer">
+    <a class=" flex flex-col items-center" href="#top">
+      <svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28"><path d="m283-345-43-43 240-240 240 239-43 43-197-197-197 198Z"/></svg>
+      <button>TOP OF PAGE</button>
+    </a>
+  </div>
+  <footer class="grid-cols-3 justify-center items-center">
+    <div name="interest links" class="bg-[#eadcd3] p-4">
+      <ul class="grid grid-cols-2 gap-2 lg:justify-items-center">
+        <li class="hover:text-[#c49b82]"><a href="#">Your Orders</a></li>
+        <li class="hover:text-[#c49b82]"><a href="#">Your list</a></li>
+        <li class="hover:text-[#c49b82]"><a href="#">Registry</a></li>
+        <li class="hover:text-[#c49b82]"><a href="#">Your Account</a></li>
+        <li class="hover:text-[#c49b82]"><a href="#">Browsing History</a></li>
+        <li class="hover:text-[#c49b82]"><a href="#">Sell Products</a></li>
+        <li class="hover:text-[#c49b82]"><a href="#">Returns</a></li>
+        <li class="hover:text-[#c49b82]"><a href="#">DevsStore.com</a></li>
+      </ul>
+    </div>
+    <div name="page config" class="grid grid-cols-3 bg-[#c49b82] p-4 text-sm md:px-6 md:justify-items-center">
+      <div class="flex items-center cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28"><path d="M480-80q-84 0-157-31.5T196-197q-54-54-85-127.5T80-482q0-84 31-156.5T196-765q54-54 127-84.5T480-880q84 0 157 30.5T764-765q54 54 85 126.5T880-482q0 84-31 157.5T764-197q-54 54-127 85.5T480-80Zm0-58q35-36 58.5-82.5T577-331H384q14 60 37.5 108t58.5 85Zm-85-12q-25-38-43-82t-30-99H172q38 71 88 111.5T395-150Zm171-1q72-23 129.5-69T788-331H639q-13 54-30.5 98T566-151ZM152-391h159q-3-27-3.5-48.5T307-482q0-25 1-44.5t4-43.5H152q-7 24-9.5 43t-2.5 45q0 26 2.5 46.5T152-391Zm221 0h215q4-31 5-50.5t1-40.5q0-20-1-38.5t-5-49.5H373q-4 31-5 49.5t-1 38.5q0 21 1 40.5t5 50.5Zm275 0h160q7-24 9.5-44.5T820-482q0-26-2.5-45t-9.5-43H649q3 35 4 53.5t1 34.5q0 22-1.5 41.5T648-391Zm-10-239h150q-33-69-90.5-115T565-810q25 37 42.5 80T638-630Zm-254 0h194q-11-53-37-102.5T480-820q-32 27-54 71t-42 119Zm-212 0h151q11-54 28-96.5t43-82.5q-75 19-131 64t-91 115Z"/></svg>
+        <div class="inline-flex items-center">
+          <span class="pl-1">English</span>
+          <svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 -960 960 960" width="14"><path d="M480-120 300-300l44-44 136 136 136-136 44 44-180 180ZM344-612l-44-44 180-180 180 180-44 44-136-136-136 136Z"/></svg>
+        </div>
+      </div>
+      <div class="flex items-center cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28"><path d="M451-120v-84q-57-10-93.5-43.5T305-332l56-23q17 48 49 71.5t77 23.5q48 0 79-24t31-66q0-44-27.5-68T466-467q-72-23-107.5-61T323-623q0-55 35.5-92t92.5-42v-83h60v83q45 5 77.5 29.5T638-665l-56 24q-14-32-37.5-46.5T483-702q-46 0-73 21t-27 57q0 38 30 61.5T524-514q68 21 100.5 60.5T657-354q0 63-37 101.5T511-203v83h-60Z"/></svg>
+        <span>USD - U.S. Dollar</span>
+      </div>
+      <div class="flex items-center cursor-pointer">
+        <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" heigth="20px" viewBox="0 0 55.2 38.4" style="enable-background:new 0 0 55.2 38.4" xml:space="preserve"><style type="text/css">.st0{fill:#B22234;} .st1{fill:#FFFFFF;} .st2{fill:#3C3B6E;}</style><g><path class="st0" d="M3.03,0h49.13c1.67,0,3.03,1.36,3.03,3.03v32.33c0,1.67-1.36,3.03-3.03,3.03H3.03C1.36,38.4,0,37.04,0,35.37 V3.03C0,1.36,1.36,0,3.03,0L3.03,0z"/><path class="st1" d="M0.02,2.73h55.17c0.01,0.1,0.02,0.2,0.02,0.31v2.94H0V3.03C0,2.93,0.01,2.83,0.02,2.73L0.02,2.73z M55.2,8.67 v3.24H0V8.67H55.2L55.2,8.67z M55.2,14.61v3.24H0v-3.24H55.2L55.2,14.61z M55.2,20.55v3.24H0v-3.24H55.2L55.2,20.55z M55.2,26.49 v3.24H0v-3.24H55.2L55.2,26.49z M55.2,32.43v2.93c0,0.1-0.01,0.21-0.02,0.31H0.02C0.01,35.58,0,35.47,0,35.37v-2.93H55.2 L55.2,32.43z"/><path class="st2" d="M20.8,0v20.68H0V3.03C0,1.36,1.36,0,3.03,0H20.8L20.8,0L20.8,0z"/><polygon class="st1" points="1.23,2.86 1.92,5.01 0.1,3.68 2.36,3.68 0.53,5.01 1.23,2.86"/><polygon class="st1" points="1.23,7.02 1.92,9.17 0.1,7.84 2.36,7.84 0.53,9.17 1.23,7.02"/><polygon class="st1" points="1.23,11.18 1.92,13.33 0.1,12 2.36,12 0.53,13.33 1.23,11.18"/><polygon class="st1" points="1.23,15.34 1.92,17.49 0.1,16.16 2.36,16.16 0.53,17.49 1.23,15.34"/><polygon class="st1" points="3.67,0.78 4.37,2.93 2.54,1.6 4.81,1.6 2.97,2.93 3.67,0.78"/><polygon class="st1" points="3.67,4.94 4.37,7.09 2.54,5.76 4.81,5.76 2.97,7.09 3.67,4.94"/><polygon class="st1" points="3.67,9.1 4.37,11.25 2.54,9.92 4.81,9.92 2.97,11.25 3.67,9.1"/><polygon class="st1" points="3.67,13.26 4.37,15.41 2.54,14.08 4.81,14.08 2.97,15.41 3.67,13.26"/><polygon class="st1" points="3.67,17.42 4.37,19.57 2.54,18.24 4.81,18.24 2.97,19.57 3.67,17.42"/><polygon class="st1" points="6.12,2.86 6.82,5.01 4.99,3.68 7.25,3.68 5.42,5.01 6.12,2.86"/><polygon class="st1" points="6.12,7.02 6.82,9.17 4.99,7.84 7.25,7.84 5.42,9.17 6.12,7.02"/><polygon class="st1" points="6.12,11.18 6.82,13.33 4.99,12 7.25,12 5.42,13.33 6.12,11.18"/><polygon class="st1" points="6.12,15.34 6.82,17.49 4.99,16.16 7.25,16.16 5.42,17.49 6.12,15.34"/><polygon class="st1" points="8.57,0.78 9.26,2.93 7.44,1.6 9.7,1.6 7.87,2.93 8.57,0.78"/><polygon class="st1" points="8.57,4.94 9.26,7.09 7.44,5.76 9.7,5.76 7.87,7.09 8.57,4.94"/><polygon class="st1" points="8.57,9.1 9.26,11.25 7.44,9.92 9.7,9.92 7.87,11.25 8.57,9.1"/><polygon class="st1" points="8.57,13.26 9.26,15.41 7.44,14.08 9.7,14.08 7.87,15.41 8.57,13.26"/><polygon class="st1" points="8.57,17.42 9.26,19.57 7.44,18.24 9.7,18.24 7.87,19.57 8.57,17.42"/><polygon class="st1" points="11.01,2.86 11.71,5.01 9.88,3.68 12.14,3.68 10.31,5.01 11.01,2.86"/><polygon class="st1" points="11.01,7.02 11.71,9.17 9.88,7.84 12.14,7.84 10.31,9.17 11.01,7.02"/><polygon class="st1" points="11.01,11.18 11.71,13.33 9.88,12 12.14,12 10.31,13.33 11.01,11.18"/><polygon class="st1" points="11.01,15.34 11.71,17.49 9.88,16.16 12.14,16.16 10.31,17.49 11.01,15.34"/><polygon class="st1" points="13.46,0.78 14.16,2.93 12.33,1.6 14.59,1.6 12.76,2.93 13.46,0.78"/><polygon class="st1" points="13.46,4.94 14.16,7.09 12.33,5.76 14.59,5.76 12.76,7.09 13.46,4.94"/><polygon class="st1" points="13.46,9.1 14.16,11.25 12.33,9.92 14.59,9.92 12.76,11.25 13.46,9.1"/><polygon class="st1" points="13.46,13.26 14.16,15.41 12.33,14.08 14.59,14.08 12.76,15.41 13.46,13.26"/><polygon class="st1" points="13.46,17.42 14.16,19.57 12.33,18.24 14.59,18.24 12.76,19.57 13.46,17.42"/><polygon class="st1" points="15.9,2.86 16.6,5.01 14.77,3.68 17.03,3.68 15.21,5.01 15.9,2.86"/><polygon class="st1" points="15.9,7.02 16.6,9.17 14.77,7.84 17.03,7.84 15.21,9.17 15.9,7.02"/><polygon class="st1" points="15.9,11.18 16.6,13.33 14.77,12 17.03,12 15.21,13.33 15.9,11.18"/><polygon class="st1" points="15.9,15.34 16.6,17.49 14.77,16.16 17.03,16.16 15.21,17.49 15.9,15.34"/><polygon class="st1" points="18.35,0.78 19.05,2.93 17.22,1.6 19.48,1.6 17.65,2.93 18.35,0.78"/><polygon class="st1" points="18.35,4.94 19.05,7.09 17.22,5.76 19.48,5.76 17.65,7.09 18.35,4.94"/><polygon class="st1" points="18.35,9.1 19.05,11.25 17.22,9.92 19.48,9.92 17.65,11.25 18.35,9.1"/><polygon class="st1" points="18.35,13.26 19.05,15.41 17.22,14.08 19.48,14.08 17.65,15.41 18.35,13.26"/><polygon class="st1" points="18.35,17.42 19.05,19.57 17.22,18.24 19.48,18.24 17.65,19.57 18.35,17.42"/></g></svg>
+        <span class="pl-2">United States</span>
+      </div>
+    </div>
+    <div name="legal" class="flex justify-between bg-[#c49b82] p-4 text-xs">
+      <span><a href="#">Conditions of Use</a></span>
+      <span><a href="#">Privacy Notice</a></span>
+      <span><a href="#">Your Ads Privacy Choises</a></span>
+    </div>
+    <div class="flex justify-center bg-[#c49b82] p-4 text-xs">
+      <span>2023,DevsStore.con</span>
+    </div>
+  </footer>
+</body>
+</html>

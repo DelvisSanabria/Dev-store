@@ -1,0 +1,494 @@
+/* zoomIn */
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
+@-moz-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -moz-transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
+@-o-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -o-transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
+
+.u--zoomIn {
+  -webkit-animation: zoomIn 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -moz-animation: zoomIn 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -o-animation: zoomIn 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation: zoomIn 1s cubic-bezier(0.445, 0.05, 0.55, 0.95); }
+
+/* zoomInDown */
+@-webkit-keyframes zoomInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -90vh, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.6, 0.6, 0.6) translate3d(0, 3vh, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+@-moz-keyframes zoomInDown {
+  0% {
+    opacity: 0;
+    -moz-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -90vh, 0);
+    -moz-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  50% {
+    opacity: 1;
+    -moz-transform: scale3d(0.6, 0.6, 0.6) translate3d(0, 3vh, 0);
+    -moz-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+@-o-keyframes zoomInDown {
+  0% {
+    opacity: 0;
+    -o-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -90vh, 0);
+    -o-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  50% {
+    opacity: 1;
+    -o-transform: scale3d(0.6, 0.6, 0.6) translate3d(0, 3vh, 0);
+    -o-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+@keyframes zoomInDown {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -90vh, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  50% {
+    opacity: 1;
+    transform: scale3d(0.6, 0.6, 0.6) translate3d(0, 3vh, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+.u--zoomInDown {
+  -webkit-animation: zoomInDown 1s;
+  -moz-animation: zoomInDown 1s;
+  -o-animation: zoomInDown 1s;
+  animation: zoomInDown 1s; }
+
+/* zoomInUp */
+@-webkit-keyframes zoomInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 90vh, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.6, 0.6, 0.6) translate3d(0, -3vh, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+@-moz-keyframes zoomInUp {
+  0% {
+    opacity: 0;
+    -moz-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 90vh, 0);
+    -moz-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  50% {
+    opacity: 1;
+    -moz-transform: scale3d(0.6, 0.6, 0.6) translate3d(0, -3vh, 0);
+    -moz-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+@-o-keyframes zoomInUp {
+  0% {
+    opacity: 0;
+    -o-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 90vh, 0);
+    -o-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  50% {
+    opacity: 1;
+    -o-transform: scale3d(0.6, 0.6, 0.6) translate3d(0, -3vh, 0);
+    -o-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+@keyframes zoomInUp {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 90vh, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  60% {
+    opacity: 1;
+    transform: scale3d(0.6, 0.6, 0.6) translate3d(0, -3vh, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+.u--zoomInUp {
+  -webkit-animation: zoomInUp 1s;
+  -moz-animation: zoomInUp 1s;
+  -o-animation: zoomInUp 1s;
+  animation: zoomInUp 1s; }
+
+/* zoomOut */
+@-webkit-keyframes zoomOut {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3); }
+  100% {
+    opacity: 0; } }
+@-moz-keyframes zoomOut {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0;
+    -moz-transform: scale3d(0.3, 0.3, 0.3); }
+  100% {
+    opacity: 0; } }
+@-o-keyframes zoomOut {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0;
+    -o-transform: scale3d(0.3, 0.3, 0.3); }
+  100% {
+    opacity: 0; } }
+@keyframes zoomOut {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3); }
+  100% {
+    opacity: 0; } }
+
+.u--zoomOut {
+  -webkit-animation: zoomOut 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -moz-animation: zoomOut 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -o-animation: zoomOut 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation: zoomOut 1s cubic-bezier(0.445, 0.05, 0.55, 0.95); }
+
+/* zoomOutDown */
+@-webkit-keyframes zoomOutDown {
+  50% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.6, 0.6, 0.6) translate3d(0, -3vh, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 90vh, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+@-moz-keyframes zoomOutDown {
+  50% {
+    opacity: 1;
+    -moz-transform: scale3d(0.6, 0.6, 0.6) translate3d(0, -3vh, 0);
+    -moz-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  100% {
+    opacity: 0;
+    -moz-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 90vh, 0);
+    -moz-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+@-o-keyframes zoomOutDown {
+  50% {
+    opacity: 1;
+    -o-transform: scale3d(0.6, 0.6, 0.6) translate3d(0, -3vh, 0);
+    -o-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  100% {
+    opacity: 0;
+    -o-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 90vh, 0);
+    -o-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+@keyframes zoomOutDown {
+  40% {
+    opacity: 1;
+    transform: scale3d(0.6, 0.6, 0.6) translate3d(0, -3vh, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  100% {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 90vh, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+.u--zoomOutDown {
+  -webkit-animation: zoomOutDown 1s;
+  -moz-animation: zoomOutDown 1s;
+  -o-animation: zoomOutDown 1s;
+  animation: zoomOutDown 1s; }
+
+/* zoomOutUp */
+@-webkit-keyframes zoomOutUp {
+  50% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.6, 0.6, 0.6) translate3d(0, 3vh, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -90vh, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+@-moz-keyframes zoomOutUp {
+  50% {
+    opacity: 1;
+    -moz-transform: scale3d(0.6, 0.6, 0.6) translate3d(0, 3vh, 0);
+    -moz-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  100% {
+    opacity: 0;
+    -moz-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -90vh, 0);
+    -moz-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+@-o-keyframes zoomOutUp {
+  50% {
+    opacity: 1;
+    -o-transform: scale3d(0.6, 0.6, 0.6) translate3d(0, 3vh, 0);
+    -o-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  100% {
+    opacity: 0;
+    -o-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -90vh, 0);
+    -o-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+@keyframes zoomOutUp {
+  40% {
+    opacity: 1;
+    transform: scale3d(0.6, 0.6, 0.6) translate3d(0, 3vh, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  100% {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -90vh, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+.u--zoomOutUp {
+  -webkit-animation: zoomOutUp 1s;
+  -moz-animation: zoomOutUp 1s;
+  -o-animation: zoomOutUp 1s;
+  animation: zoomOutUp 1s; }
+
+/* animaciones para texto y cajas*/
+
+.tracking-in-contract {
+	-webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-7-10 8:44:40
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-contract
+ * ----------------------------------------
+ */
+ @-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+
+.slide-in-elliptic-right-fwd {
+	-webkit-animation: slide-in-elliptic-right-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-elliptic-right-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-7-10 8:37:10
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-elliptic-right-fwd
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-in-elliptic-right-fwd {
+  0% {
+    -webkit-transform: translateX(800px) rotateY(-30deg) scale(0);
+            transform: translateX(800px) rotateY(-30deg) scale(0);
+    -webkit-transform-origin: -100% 50%;
+            transform-origin: -100% 50%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotateY(0) scale(1);
+            transform: translateX(0) rotateY(0) scale(1);
+    -webkit-transform-origin: -1800px 50%;
+            transform-origin: -1800px 50%;
+    opacity: 1;
+  }
+}
+@keyframes slide-in-elliptic-right-fwd {
+  0% {
+    -webkit-transform: translateX(800px) rotateY(-30deg) scale(0);
+            transform: translateX(800px) rotateY(-30deg) scale(0);
+    -webkit-transform-origin: -100% 50%;
+            transform-origin: -100% 50%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotateY(0) scale(1);
+            transform: translateX(0) rotateY(0) scale(1);
+    -webkit-transform-origin: -1800px 50%;
+            transform-origin: -1800px 50%;
+    opacity: 1;
+  }
+}
+
+.slide-in-elliptic-left-fwd {
+	-webkit-animation: slide-in-elliptic-left-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-elliptic-left-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-7-10 9:1:57
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * @animation slide-in-elliptic-left-fwd 
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-elliptic-left-fwd {
+  0% {
+    -webkit-transform: translateX(-800px) rotateY(30deg) scale(0);
+            transform: translateX(-800px) rotateY(30deg) scale(0);
+    -webkit-transform-origin: -100% 50%;
+            transform-origin: -100% 50%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotateY(0) scale(1);
+            transform: translateX(0) rotateY(0) scale(1);
+    -webkit-transform-origin: 1800px 50%;
+            transform-origin: 1800px 50%;
+    opacity: 1;
+  }
+}
+@keyframes slide-in-elliptic-left-fwd {
+  0% {
+    -webkit-transform: translateX(-800px) rotateY(30deg) scale(0);
+            transform: translateX(-800px) rotateY(30deg) scale(0);
+    -webkit-transform-origin: -100% 50%;
+            transform-origin: -100% 50%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotateY(0) scale(1);
+            transform: translateX(0) rotateY(0) scale(1);
+    -webkit-transform-origin: 1800px 50%;
+            transform-origin: 1800px 50%;
+    opacity: 1;
+  }
+}
+
+.slide-in-elliptic-bottom-fwd {
+	-webkit-animation: slide-in-elliptic-bottom-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-elliptic-bottom-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-7-10 9:2:34
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-elliptic-bottom-fwd
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-elliptic-bottom-fwd {
+  0% {
+    -webkit-transform: translateY(600px) rotateX(30deg) scale(0);
+            transform: translateY(600px) rotateX(30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% -1400px;
+            transform-origin: 50% -1400px;
+    opacity: 1;
+  }
+}
+@keyframes slide-in-elliptic-bottom-fwd {
+  0% {
+    -webkit-transform: translateY(600px) rotateX(30deg) scale(0);
+            transform: translateY(600px) rotateX(30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% -1400px;
+            transform-origin: 50% -1400px;
+    opacity: 1;
+  }
+}
+
+.slide-in-elliptic-top-fwd {
+	-webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-7-10 9:3:17
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-elliptic-top-fwd
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+            transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
+@keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+            transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
